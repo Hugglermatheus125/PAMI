@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+
+    <h1>ETEC Sales Gomes</h1>
+
+    <h1>
+
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+        ⣿⣿⠄⢀⣀⣀⣀⣀⠄⢀⣀⣀⣀⠄⢀⣀⣀⣀⡀⠄⣀⣀⣀⣀⡀⠄⣿⣿ 
+        ⣿⣿⠄⢸⣿⣉⣉⣉⠄⢸⣉⣉⣹⡇⢸⣏⣉⣉⠁⠄⣿⡏⠉⠛⠃⠄⣿⣿ 
+        ⣿⣿⠄⢠⣤⣤⣼⡿⠄⢸⠄⠄⠄⠄⢸⡇⠄⠄⠄⠄⣿⣧⣤⣿⠇⠄⣿⣿ 
+        ⣿⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣿⣿ 
+        ⣿⡻⣯⡉⠉⠉⠉⠉⠉⠉⠉⠉⣿⣿⣿⣿⠉⠉⠉⠉⠉⠉⠉⠉⢉⣽⢟⣿ 
+        ⣿⣿⡿⣷⣄⠄⠄⠄⠄⠄⠄⠄⣿⣿⣿⣿⠄⠄⠄⠄⠄⠄⠄⣠⣾⢿⣿⣿ 
+        ⣿⣿⣿⣷⡿⣷⡀⠄⠄⠄⠄⠄⣿⣿⣿⣿⠄⠄⠄⠄⠄⢀⣾⢿⣾⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣮⣿⣆⠄⠄⠄⠄⣿⣿⣿⣿⠄⠄⠄⠄⣰⣿⣵⣿⣿⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣿⣷⣝⢿⣆⠄⠄⣿⣿⣿⣿⠄⠄⣰⡿⣫⣾⣿⣿⣿⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡻⣦⠄⣿⣿⣿⣿⠄⣴⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢿⣿⣿⣿⣿⡿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿ 
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+    </h1>
+
+    <button onclick="aplicarEstilo()"> Aplicar Estilo </button>
+    <button onclick="dizerOla()"> Diga olá! </button>
+
+    <button onclick="aumentarFonte()"> Aumentar fonte </button>
+    <button onclick="reduzirFonte()"> Reduzir fonte </button>
+
+    <button onclick="aplicarCorRoxo()"> Aplicar cor purple </button>
+    <button onclick="aplicarCorVermelho()"> Aplicar cor red </button>
+    <button onclick="aplicarCorAzul()"> Aplicar cor blue </button>
+
+    <button onclick="aumentarMargem()"> Aumentar margens </button>
+    <button onclick="reduzirMargem()"> Reduzir margens </button>
+
+    <script> 
+    
+    let titulo = document.querySelector('h1');
+
+        function aplicarEstilo() {
+            document.body.style.backgroundColor = 'purple';
+            titulo.style.backgroundColor = 'white';
+            titulo.style.fontSize = '64px';
+            titulo.style.fontFamily = 'Comic Sans MS';
+            titulo.style.marginTop = '100px';
+        }
+
+        function dizerOla() {
+            alert('Olá!!')
+        }
+
+        // =====================================
+
+        let font_size = 12; 
+
+        function aumentarFonte(){
+            font_size++;
+            aplicarSize();
+        }
+
+        function reduzirFonte(){
+            font_size--;
+            aplicarSize();
+        }
+
+        function aplicarSize(){
+            titulo.style.fontSize = font_size + 'px';
+        }
+
+        // =====================================
+
+        function aplicarCorRoxo(){
+            document.body.style.color = 'purple';
+        }
+
+        function aplicarCorVermelho(){
+            document.body.style.color = 'red';
+        }
+
+        function aplicarCorAzul(){
+            document.body.style.color = 'blue';
+        }
+
+        // =====================================
+
+        let margin_size = 12;
+
+        function aumentarMargem(){
+            margin_size++;
+            aplicarMargem();
+        }
+
+        function reduzirMargem(){
+            margin_size--;
+            aplicarMargem();
+        }
+
+        function aplicarMargem(){
+            titulo.style.margin = margin_size + 'px';
+        }
+
+
+    </script>
+
+</body>
+</html>
