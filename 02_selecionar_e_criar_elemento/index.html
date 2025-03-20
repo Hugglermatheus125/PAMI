@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Opala</button>
+    <button onclick="addVeiculo3()">Adicionar Monza</button>
+    <button onclick="addVeiculo4()">Adicionar Uno Escada</button>
+    
+    <div id="estacionamento"> </div>
+
+    <script>
+
+        let estacionamento = document.querySelector('#estacionamento');
+        estacionamento.style.textAlign = 'center';
+
+        function addVeiculo1() {
+
+            let veiculo_1 = document.createElement('h1');
+        veiculo_1.innerText = 'Fusca';
+        veiculo_1.style.color = 'white';
+        veiculo_1.style.backgroundColor = 'black';
+        veiculo_1.style.fontSize = '28px';
+        veiculo_1.style.fontFamily = 'Calibri';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://i.ytimg.com/vi/_WLxNoK7m_M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCllzIh-vT2RV99JvC9L10qik_q6A');
+        imagem.style.justifyContent = 'Center';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_1);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        //================================================
+
+        function addVeiculo2() {
+
+            let veiculo_2 = document.createElement('h1');
+        veiculo_2.innerText = 'Opala';
+        veiculo_2.style.color = 'white';
+        veiculo_2.style.backgroundColor = 'black';
+        veiculo_2.style.fontSize = '28px';
+        veiculo_2.style.fontFamily = 'Calibri';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/57897c8b0e216345752038a7opala-comodoro-5.jpeg?quality=70&strip=all&strip=all');
+        imagem.style.justifyContent = 'Center';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_2);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        //================================================
+
+        function addVeiculo3() {
+
+            let veiculo_3 = document.createElement('h1');
+        veiculo_3.innerText = 'Monza';
+        veiculo_3.style.color = 'white';
+        veiculo_3.style.backgroundColor = 'black';
+        veiculo_3.style.fontSize = '28px';
+        veiculo_3.style.fontFamily = 'Calibri';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/5658b72d52657372a1113f54642_monza_abre.jpeg?quality=70&strip=info&crop=1&resize=1080,565');
+        imagem.style.justifyContent = 'Center';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_3);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+
+        //================================================
+
+        function addVeiculo4() {
+
+            let veiculo_4 = document.createElement('h1');
+        veiculo_4.innerText = 'Uno Escada';
+        veiculo_4.style.color = 'white';
+        veiculo_4.style.backgroundColor = 'black';
+        veiculo_4.style.fontSize = '28px';
+        veiculo_4.style.fontFamily = 'Calibri';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://i.redd.it/kj8ltn3z8tma1.jpg');
+
+
+        document.querySelector('#estacionamento').appendChild(veiculo_4);
+        document.querySelector('#estacionamento').appendChild(imagem);
+        }
+        
+
+    </script>
+</body>
+</html>
